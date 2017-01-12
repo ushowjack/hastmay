@@ -1,0 +1,39 @@
+
+​<!DOCTYPE html>
+<html><head>
+<style>
+.flex {
+  width: 420px;
+  height: 250px;
+  border: 1px solid #555;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+}
+.flex > div:nth-child(1) { 
+  -webkit-flex: 1 1 auto;
+  background : #009246;
+}
+.flex > div:nth-child(2) {
+  -webkit-flex: 2 1 auto;
+  background : #F1F2F1; 
+}
+.flex > div:nth-child(3) {
+  -webkit-flex: 3 1 auto;
+  background : #CE2B37; 
+}
+.flex > div {
+  -webkit-transition: width 0.7s ease-out;
+  width: 60px;
+}
+.flex > div:hover {
+  width: 240px;
+  color: #EEEEEE;
+}
+</style>
+</head><body>
+<div class="flex">
+  <div>one</div>
+  <div>two</div>
+  <div>three</div>
+</div>
+</body></html>
